@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c $CFILE
+gcc -c $CFILE -o $(cut -d. -f1 <<< $CFILE).s
